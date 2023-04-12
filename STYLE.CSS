@@ -1,0 +1,64 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;  /* move box to center nomargin from top */
+    align-items: center;     /* move box to center margin from above */
+    background: linear-gradient(45deg, black, rgb(200, 178, 178));
+    /* divide screen to 45deg to give 2 colors u can also use to left, to right, to bottom */
+}
+
+
+.calculator {
+    border: 1px solid rgb(122, 35, 35);
+    padding: 20px;  /* dist bw the content and the border */
+    border-radius: 16px;
+    box-shadow: 0px 3px 15px whitesmoke;
+}
+
+input {
+    width: 90%;
+    border: none;
+    padding: 24px;
+    margin: 10px;
+    background: transparent; /* the input box will became transparent  */
+    box-shadow: 0px 3px 15px rgb(200, 178, 178);
+    font-size: 40px;
+    text-align: right;
+    cursor: pointer;
+}
+
+input::placeholder {
+    color: #ffff;
+}
+
+button{
+    border: none;
+    width: 60px;
+    height: 60px;
+    margin: 35px;
+    border-radius: 50%;
+    background: transparent;
+    color: #ffff;
+    font-size: 20px;
+    box-shadow: -8px -8px 15px rgb(200, 178, 178);
+    cursor: pointer;
+}
+
+.equalBtn {
+    background-color: orangered;
+}
+
+.operator {
+    background-color: rgb(121, 203, 209);
+}
+
+
+
